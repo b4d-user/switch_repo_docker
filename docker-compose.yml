@@ -1,0 +1,8 @@
+services:
+  switch_repo:
+    build: .
+    ports:
+      - 80:80
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d
+      - ./games:/usr/share/nginx/html
